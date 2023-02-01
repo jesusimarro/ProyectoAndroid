@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="LinearVerticalDefault"></style>
+
+    <style name="SwipeRefreshDefault"></style>
+
+    <style name="RecyclerDefault"></style>
+</resources>

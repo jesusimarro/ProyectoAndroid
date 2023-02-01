@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#7A1C1A1A"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="@dimen/cardview_default_elevation"
+    app:contentPadding="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="371dp"
+        android:layout_height="130dp"
+        android:padding="@dimen/fab_margin">
+
+        <TextView
+            android:id="@+id/tv_equipo1"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:padding="5dp"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+
+            app:layout_constraintBottom_toBottomOf="@+id/iv_equipo1"
+            app:layout_constraintStart_toEndOf="@+id/iv_equipo1"
+            app:layout_constraintTop_toTopOf="@+id/iv_equipo1"
+            tools:text="Team A" />
+
+        <ImageView
+            android:id="@+id/iv_equipo1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_gol_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="TextView"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_equipo1"
+            app:layout_constraintStart_toEndOf="@+id/tv_equipo1"
+            app:layout_constraintTop_toTopOf="@+id/tv_equipo1"  />
+<!--            android:shadowColor="@color/sombra"-->
+<!--            android:shadowDx="4"-->
+<!--            android:shadowDy="4"-->
+<!--            android:shadowRadius="6"-->
+
+
+        <TextView
+            android:id="@+id/tv_equipo2"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:padding="5dp"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_equipo2"
+            app:layout_constraintStart_toEndOf="@+id/iv_equipo2"
+            app:layout_constraintTop_toTopOf="@+id/iv_equipo2"
+            tools:text="Team B" />
+
+        <ImageView
+            android:id="@+id/iv_equipo2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_gol_visitante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="TextView"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_equipo2"
+            app:layout_constraintStart_toEndOf="@+id/tv_equipo2"
+            app:layout_constraintTop_toTopOf="@+id/tv_equipo2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

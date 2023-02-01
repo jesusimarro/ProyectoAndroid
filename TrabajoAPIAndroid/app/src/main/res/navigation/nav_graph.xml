@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentCompeticiones">
+
+    <fragment
+        android:id="@+id/fragmentCompeticiones"
+        android:name="com.example.appfootball.Clases.FragmentCompeticiones"
+        android:label="Competiciones"
+        tools:layout="@layout/fragment_competiciones">
+        <action
+            android:id="@+id/action_fragmentCompeticiones_to_fragmentCompeticion"
+            app:destination="@id/fragmentCompeticion" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCompeticion"
+        android:name="com.example.appfootball.Clases.FragmentCompeticion"
+        android:label="FragmentCompeticion"
+        tools:layout="@layout/fragment_competicion"
+        >
+        <action
+            android:id="@+id/action_fragmentCompeticion_to_fragmentEquipo"
+            app:destination="@id/fragmentEquipo" />
+        <action
+            android:id="@+id/action_fragmentCompeticion_to_fragmentJugador"
+            app:destination="@id/fragmentJugador" />
+        <action
+            android:id="@+id/action_fragmentCompeticion_to_fragmentClasificacion"
+            app:destination="@id/fragmentClasificacion" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentEquipo"
+        android:name="com.example.appfootball.Clases.FragmentEquipo"
+        android:label="FragmentEquipo"
+        tools:layout="@layout/fragment_equipo"
+        >
+        <action
+            android:id="@+id/action_fragmentEquipo_to_fragmentJugador"
+            app:destination="@id/fragmentJugador" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentGoleadores"
+        android:name="com.example.appfootball.Clases.Tabs.FragmentGoleadores"
+        android:label="FragmentGoleadores"
+        tools:layout="@layout/fragment_goleadores"
+        >
+        <action
+            android:id="@+id/action_fragmentGoleadores_to_fragmentJugador"
+            app:destination="@id/fragmentJugador" />
+        <action
+            android:id="@+id/action_fragmentGoleadores_to_fragmentJugador2"
+            app:destination="@id/fragmentJugador" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentJugador"
+        android:name="com.example.appfootball.Clases.FragmentJugador"
+        android:label="FragmentJugador"
+        tools:layout="@layout/fragment_jugador"
+        >
+        <action
+            android:id="@+id/action_fragmentJugador_to_fragmentEquipo"
+            app:destination="@id/fragmentEquipo" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentEquipos"
+        android:name="com.example.appfootball.Clases.Tabs.FragmentEquipos"
+        android:label="FragmentEquipos"
+        tools:layout="@layout/fragment_equipos"
+        >
+        <action
+            android:id="@+id/action_fragmentEquipos_to_fragmentEquipo"
+            app:destination="@id/fragmentEquipo" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentClasificacion"
+        android:name="com.example.appfootball.Clases.FragmentClasificacion"
+        android:label="FragmentClasificacion"
+        tools:layout="@layout/fragment_clasificacion">
+        <action
+            android:id="@+id/action_fragmentClasificacion_to_fragmentEquipo"
+            app:destination="@id/fragmentEquipo" />
+    </fragment>
+</navigation>

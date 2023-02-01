@@ -1,0 +1,29 @@
+Clonar repositorio
+git clone <repo sin <> >
+
+Descargar el contenido del repositorio a local
+git fetch
+
+Meter los datos dentro de la carpeta del repositorio
+git pull origin main
+
+Para enviar desde local al repositorio
+Avisar de que existe un cambio (Commit)
+git commit -am "texto del mensaje"
+
+Empujar los cambios al repositorio
+git push origin main
+
+Añadir un nuevo archivo a nuestro repo
+git add "nombre"
+
+Crear una nueva rama
+git branch <nombreRama>
+
+Cambiar a otra rama
+git checkout <nombreRama>
+
+Crear rama y cambiar a la rama creada
+git checkout -B <nombreRama>
+
+Antonio
